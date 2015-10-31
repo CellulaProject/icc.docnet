@@ -1,0 +1,12 @@
+[submodule "icc.cellula"]
+	path = icc.cellula
+	url = git@github.com:eugeneai/icc.cellula.git
+[submodule "icc.contentstorage"]
+	path = icc.contentstorage
+	url = git@github.com:eugeneai/icc.contentstorage.git
+[submodule "icc.restfuldocs"]
+	path = icc.restfuldocs
+	url = git@github.com:eugeneai/icc.restfuldocs.git
+[submodule "waitress"]
+	path = waitress
+	url = git@github.com:eugeneai/waitress.git
