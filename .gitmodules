@@ -10,3 +10,6 @@
 [submodule "waitress"]
 	path = waitress
 	url = git@github.com:eugeneai/waitress.git
+[submodule "icc.rdfservice"]
+	path = icc.rdfservice
+	url = git@github.com:eugeneai/icc.rdfservice.git
