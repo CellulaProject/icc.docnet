@@ -1,4 +1,4 @@
-.PHONY: all dev test
+.PHONY: all dev test py
 
 all: test
 
@@ -7,3 +7,6 @@ dev:
 
 test:
 	make -C icc.cellula test
+
+py:
+	make -C icc.cellula py
