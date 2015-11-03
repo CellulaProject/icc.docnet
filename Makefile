@@ -1,4 +1,4 @@
-.PHONY: all dev test py
+.PHONY: all dev test py upd-cat
 
 all: test
 
@@ -10,3 +10,6 @@ test:
 
 py:
 	make -C icc.cellula py
+
+upd-cat:
+	make -C icc.cellula upd-cat
