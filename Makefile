@@ -1,5 +1,5 @@
 .PHONY: all dev test py upd-cat install-arch \
-	install-arch-pkgs install-yaourt virtualenv
+	install-arch-pkgs install-yaourt virtualenv adjust-init
 YAOURT=yaourt
 
 LPYTHON=python3
@@ -7,11 +7,13 @@ V=$(PWD)/$(LPYTHON)
 VB=$(V)/bin
 PYTHON=$(VB)/$(LPYTHON)
 ROOT=$(PWD)
+DATA_DIR=$(HOME)/tmp/cellula-data/
 
 env:	virtualenv
 	[ -d $(V) ] || virtualenv  $(V)
 	$(VB)/easy_install --upgrade pip
 	$(VB)/easy_install --upgrade setuptools
+	[ -d $(DATA_DIR) ] || mkdir -p $(DATA_DIR){tmp,indexes,rdf}
 
 virtualenv:
 	@which virtualenv > /dev/null || make install-arch
@@ -19,17 +21,20 @@ virtualenv:
 
 all: test
 
-dev:
-	make -C icc.cellula dev
+dev: env
+	cd icc.cellula && make dev
 
-test:
-	make -C icc.cellula test
+test:	adjust-init
+	cd icc.cellula && make test
+
+adjust-ini:
+	cd icc.cellula && make adjust-ini
 
 py:
-	make -C icc.cellula py
+	$(PYTHON)
 
 upd-cat:
-	make -C icc.cellula upd-cat
+	cd icc.cellula && make upd-cat
 
 install-arch: install-yaourt install-arch-pkgs
 
