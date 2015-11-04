@@ -5,9 +5,12 @@ YAOURT=yaourt
 LPYTHON=python3
 V=$(PWD)/$(LPYTHON)
 VB=$(V)/bin
+VL=$(V)/lib/python3.5/site-packages
 PYTHON=$(VB)/$(LPYTHON)
 ROOT=$(PWD)
 DATA_DIR=$(HOME)/tmp/cellula-data/
+SPHINXPY=sphinxapi.py
+SPHINXPYDIR=/usr/share/sphinx/lib
 
 env:	virtualenv
 	[ -d $(V) ] || virtualenv  $(V)
@@ -23,6 +26,7 @@ all: test
 
 dev: env
 	cd icc.cellula && make dev
+	# [ -f $(VL)/$(SPHINXPY) ] || ln -sf $(SPHINXPYDIR)/$(SPHINXPY) $(VL)/$(SPHINXPY)
 
 test:	adjust-init
 	cd icc.cellula && make test
