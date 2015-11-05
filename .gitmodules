@@ -1,15 +1,15 @@
 [submodule "icc.cellula"]
 	path = icc.cellula
-	url = git@github.com:eugeneai/icc.cellula.git
+	url = git@github.com:CellulaProject/icc.cellula.git
 [submodule "icc.contentstorage"]
 	path = icc.contentstorage
-	url = git@github.com:eugeneai/icc.contentstorage.git
+	url = git@github.com:CellulaProject/icc.contentstorage.git
 [submodule "icc.restfuldocs"]
 	path = icc.restfuldocs
-	url = git@github.com:eugeneai/icc.restfuldocs.git
+	url = git@github.com:CellulaProject/icc.restfuldocs.git
 [submodule "waitress"]
 	path = waitress
-	url = git@github.com:eugeneai/waitress.git
+	url = git@github.com:CellulaProject/waitress.git
 [submodule "icc.rdfservice"]
 	path = icc.rdfservice
-	url = git@github.com:eugeneai/icc.rdfservice.git
+	url = git@github.com:CellulaProject/icc.rdfservice.git
