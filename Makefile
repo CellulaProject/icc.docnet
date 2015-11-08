@@ -1,5 +1,6 @@
 .PHONY: all dev test py upd-cat install-arch \
-	install-arch-pkgs install-yaourt virtualenv adjust-init
+	install-arch-pkgs install-yaourt virtualenv adjust-init \
+	rm-data
 YAOURT=yaourt
 
 LPYTHON=python3
@@ -48,3 +49,6 @@ install-yaourt:
 
 install-arch-pkgs:
 	$(YAOURT) --needed --noconfirm -S `cat arch-yaourt-pkglist.txt`
+
+rm-data:
+	rm -rf /home/eugeneai/tmp/cellula-data/{tmp/*,indexes/*,rdf/*,content.kch*}
