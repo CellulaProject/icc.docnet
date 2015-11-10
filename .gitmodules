@@ -13,3 +13,6 @@
 [submodule "icc.rdfservice"]
 	path = icc.rdfservice
 	url = git@github.com:CellulaProject/icc.rdfservice.git
+[submodule "pengines"]
+	path = pengines
+	url = git@github.com:eugeneai/pengines.git
