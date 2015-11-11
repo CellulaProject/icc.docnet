@@ -44,16 +44,18 @@ upd-cat:
 install-arch: install-yaourt install-arch-pkgs install-swi-prolog
 
 install-yaourt:
-	@which $(YAOURT) > /dev/null || echo "Install yaourt according to https://archlinux.fr/yaourt-en." 
+	@which $(YAOURT) > /dev/null || echo "Install yaourt according to https://archlinux.fr/yaourt-en."
 	@which $(YAOURT) 2> /dev/null >/dev/null
 
 install-arch-pkgs:
 	$(YAOURT) -Sy
 	$(YAOURT) --needed --noconfirm -S `cat install/arch-yaourt-pkglist.txt`
-	
+
 install-swi-prolog:
-	@echo When asked to remove swi-prolog (a stable version) answer "y".
-	cd install/swi-prolog-devel && makepkg -si
+	@echo "When asked to remove swi-prolog (a stable version) answer 'y'."
+	#cd install/swi-prolog-devel && makepkg -si
+	yaourt -G swi-prolog || true
+	cd swi-prolog && makepkg -si
 
 rm-data:
 	rm -rf /home/eugeneai/tmp/cellula-data/{tmp/*,indexes/*,rdf/*,content.kch*}

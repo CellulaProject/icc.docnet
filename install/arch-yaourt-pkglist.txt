@@ -30,4 +30,3 @@ libgsf
 libmpeg2
 libvorbis
 uuid
-#swi-prolog-devel
