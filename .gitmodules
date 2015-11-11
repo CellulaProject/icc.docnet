@@ -16,3 +16,9 @@
 [submodule "pengines"]
 	path = pengines
 	url = git@github.com:eugeneai/pengines.git
+[submodule "swi/pengines"]
+	path = swi/pengines
+	url = https://github.com/SWI-Prolog/pengines.git
+[submodule "swi/icc.pengines"]
+	path = swi/icc.pengines
+	url = git@github.com:CellulaProject/icc.pengines.git
