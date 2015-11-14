@@ -57,4 +57,5 @@ docs/_build/
 target/
 
 python3/
-tmp/
+tmp/swi-pengines/
+/swi-pengines/
