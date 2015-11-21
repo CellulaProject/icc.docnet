@@ -1,6 +1,6 @@
 .PHONY: all dev test py upd-cat install-arch \
 	install-arch-pkgs install-yaourt virtualenv adjust-init \
-	rm-data install-swi-prolog
+	rm-data install-swi-prolog pengines
 YAOURT=yaourt
 
 LPYTHON=python3
@@ -59,3 +59,6 @@ install-swi-prolog:
 
 rm-data:
 	rm -rf /home/eugeneai/tmp/cellula-data/{tmp/*,indexes/*,rdf/*,content.kch*}
+
+pengines:
+	screen -dm bash -c "cd swi/icc.pengines; swipl icc_pengines.pl"
