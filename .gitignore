@@ -62,3 +62,5 @@ tmp/swi-pengines/
 /tmp/
 *~
 *.bak
+/dustjs
+
