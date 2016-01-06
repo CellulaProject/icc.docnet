@@ -22,3 +22,6 @@
 [submodule "swi/icc.pengines"]
 	path = swi/icc.pengines
 	url = git@github.com:CellulaProject/icc.pengines.git
+[submodule "AdminLTE"]
+	path = AdminLTE
+	url = git@github.com:eugeneai/AdminLTE.git
