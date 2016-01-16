@@ -28,6 +28,7 @@ all: test
 dev: env
 	cd icc.cellula && make dev
 	# [ -f $(VL)/$(SPHINXPY) ] || ln -sf $(SPHINXPYDIR)/$(SPHINXPY) $(VL)/$(SPHINXPY)
+	cd pengines && $(PYTHON) setup.py develop
 
 test:	adjust-init
 	cd icc.cellula && make test
