@@ -1,0 +1,82 @@
+# ~/.config/terminator/config
+[global_config]
+  borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  focus = mouse
+  homogeneous_tabbar = False
+  scroll_tabbar = True
+  tab_position = bottom
+  title_font = Fira Mono 16
+  title_transmit_bg_color = "#795e2e"
+  title_use_system_font = False
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[cc]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 7947a852-db4f-4e8b-884e-8ca1d238f98d
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:19
+      size = 1276, 1001
+      title = eugeneai@center:~/Development/soft/icc.docnet
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 635
+      ratio = 0.49960815047
+      type = HPaned
+    [[[terminal2]]]
+      command = make test; bash
+      directory = "/home/eugeneai/Development/soft/icc.docnet"
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 7947a852-db4f-4e8b-884e-8ca1d238f98d
+    [[[terminal3]]]
+      directory = "/home/eugeneai/Development/soft/icc.docnet/swi/icc.pengines"
+      command = make test; bash
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = bac99efe-0a92-4ba4-a904-326fe13b6003
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    cursor_blink = False
+    cursor_color = "#ff9c00"
+    font = Fira Mono 12
+    foreground_color = "#909090"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    scroll_on_output = False
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[debug]]
+    background_color = "#002b36"
+    background_image = None
+    copy_on_selection = True
+    cursor_blink = False
+    cursor_color = "#68ab14"
+    font = Fira Mono 12
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scroll_on_output = False
+    show_titlebar = False
+    use_system_font = False

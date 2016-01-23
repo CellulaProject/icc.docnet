@@ -1,6 +1,6 @@
 .PHONY: all dev test py upd-cat install-arch \
 	install-arch-pkgs install-yaourt virtualenv adjust-init \
-	rm-data install-swi-prolog pengines
+	rm-data install-swi-prolog pengines term
 YAOURT=yaourt
 
 LPYTHON=python3
@@ -63,3 +63,6 @@ rm-data:
 
 pengines:
 	screen -dm bash -c "cd swi/icc.pengines; swipl icc_pengines.pl"
+
+term:
+	terminator -l cc
