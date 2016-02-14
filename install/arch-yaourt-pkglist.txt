@@ -2,6 +2,7 @@ python
 python-virtualenv
 python-setuptools
 python-pip
+sendmail
 kyotocabinet
 tracker
 recoll
