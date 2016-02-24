@@ -56,7 +56,7 @@ install-swi-prolog:
 	@echo "When asked to remove swi-prolog (a stable version) answer 'y'."
 	#cd install/swi-prolog-devel && makepkg -si
 	yaourt -G swi-prolog-devel || true
-	cd swi-prolog && makepkg -si
+	cd swi-prolog-devel && makepkg -si
 
 rm-data:
 	rm -rf /home/eugeneai/tmp/cellula-data/{tmp/*,indexes/*,rdf/*,content.kch*}
