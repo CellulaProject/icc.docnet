@@ -28,3 +28,6 @@
 [submodule "ClioPatria"]
 	path = ClioPatria
 	url = https://github.com/ClioPatria/ClioPatria.git
+[submodule "dustjs"]
+	path = dustjs
+	url = git@github.com:eugeneai/dustjs.git
