@@ -25,3 +25,6 @@
 [submodule "AdminLTE"]
 	path = AdminLTE
 	url = git@github.com:eugeneai/AdminLTE.git
+[submodule "ClioPatria"]
+	path = ClioPatria
+	url = https://github.com/ClioPatria/ClioPatria.git
