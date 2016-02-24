@@ -1,6 +1,6 @@
 .PHONY: all dev test py upd-cat install-arch \
 	install-arch-pkgs install-yaourt virtualenv adjust-init \
-	rm-data install-swi-prolog pengines term
+	rm-data install-swi-prolog pengines term prep
 YAOURT=yaourt
 
 LPYTHON=python3
@@ -29,6 +29,12 @@ dev: env
 	cd icc.cellula && make dev
 	# [ -f $(VL)/$(SPHINXPY) ] || ln -sf $(SPHINXPYDIR)/$(SPHINXPY) $(VL)/$(SPHINXPY)
 	cd pengines && $(PYTHON) setup.py develop
+
+prep: 	git-rec dev
+
+git-rec:
+	git submodule update --init --recursive
+	git submodule update --recursive
 
 test:	adjust-init
 	cd icc.cellula && make test
