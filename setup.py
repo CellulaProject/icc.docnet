@@ -19,7 +19,7 @@ setup(name='icc.docnet',
       ],
       keywords="web services",
       author='Evgeny Cherkashin',
-      author_email='eugeneai at irnok.net',
+      author_email='eugeneai@irnok.net',
       url='',
       packages=find_packages(),
       include_package_data=True,
@@ -32,10 +32,10 @@ setup(name='icc.docnet',
         'https://github.com/eugeneai/icc.cellula/archive/master.zip#egg=icc.celulla-0.1',
         ],
       package_dir = {'': 'src'},
-      entry_points = """\
-      []
-      main=icc.docnet.app:main
-      """,
+#      entry_points = """\
+#      []
+#      main=icc.docnet.app:main
+#      """,
 #    message_extractors = {
 #        'src/icc/cellula': [
 #            ('**.py',                'python', None),
