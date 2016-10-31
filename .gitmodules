@@ -9,7 +9,7 @@
 	url = git@github.com:CellulaProject/icc.restfuldocs.git
 [submodule "waitress"]
 	path = waitress
-	url = git@github.com:eugeneai/waitress.git
+	url = https://github.com/Pylons/waitress.git
 [submodule "icc.rdfservice"]
 	path = icc.rdfservice
 	url = git@github.com:CellulaProject/icc.rdfservice.git
