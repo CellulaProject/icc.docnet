@@ -1,6 +1,0 @@
-[submodule "AdminLTE"]
-	path = AdminLTE
-	url = git@github.com:eugeneai/AdminLTE.git
-[submodule "dustjs"]
-	path = dustjs
-	url = git@github.com:eugeneai/dustjs.git
