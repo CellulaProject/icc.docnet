@@ -62,3 +62,5 @@ tmp/swi-pengines/
 *~
 *.bak
 
+#pyenv local version designator
+.python-version

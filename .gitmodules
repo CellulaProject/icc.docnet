@@ -1,33 +1,6 @@
-[submodule "icc.cellula"]
-	path = icc.cellula
-	url = git@github.com:CellulaProject/icc.cellula.git
-[submodule "icc.contentstorage"]
-	path = icc.contentstorage
-	url = git@github.com:CellulaProject/icc.contentstorage.git
-[submodule "icc.restfuldocs"]
-	path = icc.restfuldocs
-	url = git@github.com:CellulaProject/icc.restfuldocs.git
-[submodule "waitress"]
-	path = waitress
-	url = https://github.com/Pylons/waitress.git
-[submodule "icc.rdfservice"]
-	path = icc.rdfservice
-	url = git@github.com:CellulaProject/icc.rdfservice.git
-[submodule "pengines"]
-	path = pengines
-	url = git@github.com:eugeneai/pengines.git
-[submodule "swi/pengines"]
-	path = swi/pengines
-	url = https://github.com/SWI-Prolog/pengines.git
-[submodule "swi/icc.pengines"]
-	path = swi/icc.pengines
-	url = git@github.com:CellulaProject/icc.pengines.git
 [submodule "AdminLTE"]
 	path = AdminLTE
 	url = git@github.com:eugeneai/AdminLTE.git
-[submodule "ClioPatria"]
-	path = ClioPatria
-	url = https://github.com/ClioPatria/ClioPatria.git
 [submodule "dustjs"]
 	path = dustjs
 	url = git@github.com:eugeneai/dustjs.git
