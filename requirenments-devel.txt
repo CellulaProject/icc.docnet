@@ -3,3 +3,4 @@
 -e git+git@github.com:CellulaProject/icc.rdfservice.git#egg=icc.rdfservice
 -e git+git@github.com:CellulaProject/icc.restfuldocs.git#egg=icc.restfuldocs
 -e git+git@github.com:CellulaProject/icc.restfuldocs.git#egg=icc.contentstorage
+-e git+git@github.com:eugeneai/pengines.git#egg=pengines

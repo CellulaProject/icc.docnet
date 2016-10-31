@@ -64,3 +64,10 @@ tmp/swi-pengines/
 
 #pyenv local version designator
 .python-version
+bin
+docnet
+include
+lib
+pip-selfcheck.json
+src
+/python3
