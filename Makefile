@@ -1,5 +1,5 @@
 .PHONY: all dev test py upd-cat install-arch \
-	install-arch-pkgs install-yaourt virtualenv adjust-init \
+	install-arch-pkgs install-yaourt virtualenv adjust-ini \
 	rm-data install-swi-prolog pengines term prep
 YAOURT=yaourt
 
@@ -36,7 +36,7 @@ git-rec:
 	git submodule update --init --recursive
 	git submodule update --recursive
 
-test:	adjust-init
+test:	adjust-ini
 	cd icc.cellula && make test
 
 adjust-ini:
