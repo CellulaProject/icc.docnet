@@ -1,6 +1,8 @@
 .PHONY: all dev test py upd-cat install-arch \
 	install-arch-pkgs install-yaourt virtualenv adjust-ini \
-	rm-data install-swi-prolog pengines term prep
+	rm-data install-swi-prolog pengines term prep \
+	pyenv develop
+
 YAOURT=yaourt
 
 LPYTHON=python3
@@ -12,6 +14,7 @@ ROOT=$(PWD)
 DATA_DIR=$(HOME)/tmp/cellula-data/
 SPHINXPY=sphinxapi.py
 SPHINXPYDIR=/usr/share/sphinx/lib
+DOCNET_PYENV=icc.docnet
 
 env:	virtualenv
 	[ -d $(V) ] || virtualenv  $(V)
@@ -72,3 +75,11 @@ pengines:
 
 term:
 	terminator -l cc
+
+pyenv:
+	pyenv vitualenv system $(DOCNET_PYENV)
+	pyenv local $(DOCNET_PYENV)
+	ln -sf ~/.pyenv/versions/$(DOCNET_PYENV) python3
+
+develop:
+	pip install -e requrements-devel.txt
