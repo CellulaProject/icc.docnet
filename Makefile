@@ -15,6 +15,7 @@ DATA_DIR=$(HOME)/tmp/cellula-data/
 SPHINXPY=sphinxapi.py
 SPHINXPYDIR=/usr/share/sphinx/lib
 DOCNET_PYENV=icc.docnet
+DOCNET_PYENV_DIR=$(HOME)/.pyenv/versions/$(DOCNET_PYENV)
 
 env:	virtualenv
 	[ -d $(V) ] || virtualenv  $(V)
@@ -77,9 +78,10 @@ term:
 	terminator -l cc
 
 pyenv:
-	pyenv vitualenv system $(DOCNET_PYENV)
+	pyenv virtualenv system $(DOCNET_PYENV)
 	pyenv local $(DOCNET_PYENV)
-	ln -sf ~/.pyenv/versions/$(DOCNET_PYENV) python3
+	ln -sf $(DOCNET_PYENV_DIR) python3
+	$(DOCNET_PYENV_DIR)/bin/pip install --upgrade pip wheel setuptools
 
 develop:
-	pip install -e requrements-devel.txt
+	pip install -r requirements-devel.txt
