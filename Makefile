@@ -36,7 +36,7 @@ git-rec:
 	git submodule update --init --recursive
 	git submodule update --recursive
 
-test:	adjust-init
+test:	adjust-ini
 	cd icc.cellula && make test
 
 adjust-ini:
