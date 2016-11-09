@@ -84,4 +84,4 @@ pyenv:
 	$(DOCNET_PYENV_DIR)/bin/pip install --upgrade pip wheel setuptools
 
 develop:
-	pip install -r requirements-devel.txt
+	$(DOCNET_PYENV_DIR)/bin/pip install -r requirements-devel.txt
