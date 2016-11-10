@@ -17,6 +17,8 @@ SPHINXPYDIR=/usr/share/sphinx/lib
 DOCNET_PYENV=icc.docnet
 DOCNET_PYENV_DIR=$(HOME)/.pyenv/versions/$(DOCNET_PYENV)
 
+all: test
+
 env:	virtualenv
 	[ -d $(V) ] || virtualenv  $(V)
 	$(VB)/easy_install --upgrade pip
@@ -26,8 +28,6 @@ env:	virtualenv
 virtualenv:
 	@which virtualenv > /dev/null || make install-arch
 	@which virtualenv > /dev/null
-
-all: test
 
 dev: env
 	cd icc.cellula && make dev

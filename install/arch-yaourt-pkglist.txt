@@ -7,7 +7,6 @@ tracker
 recoll
 libextractor
 yaourt
-aur/sphinx
 libxslt
 unzip
 poppler
