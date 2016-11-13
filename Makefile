@@ -1,7 +1,7 @@
 .PHONY: all dev test py upd-cat install-arch \
 	install-arch-pkgs install-yaourt virtualenv adjust-ini \
 	rm-data install-swi-prolog pengines term prep \
-	pyenv develop
+	pyenv develop index-show index-show-full index-show-debug
 
 YAOURT=yaourt
 
@@ -84,4 +84,15 @@ pyenv:
 	$(DOCNET_PYENV_DIR)/bin/pip install --upgrade pip wheel setuptools
 
 develop:
+	# FIXME Check subprojects on uncommited and unpushed git data first!!!
 	$(DOCNET_PYENV_DIR)/bin/pip install -r requirements-devel.txt
+	cd $(DOCNET_PYENV_DIR)/src && pyenv local $(DOCNET_PYENV)
+
+index-show-debug:
+	DEBUG=10 SHORTEN=500 python3 $(DOCNET_PYENV_DIR)/src/icc.cellula/src/icc/cellula/indexer/scripts/indexfeeder.py
+
+index-show:
+	SHORTEN=500 python3 $(DOCNET_PYENV_DIR)/src/icc.cellula/src/icc/cellula/indexer/scripts/indexfeeder.py
+
+index-show-full:
+	python3 $(DOCNET_PYENV_DIR)/src/icc.cellula/src/icc/cellula/indexer/scripts/indexfeeder.py
