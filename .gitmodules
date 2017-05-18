@@ -1,0 +1,3 @@
+[submodule "services/sphinx-arch-beta"]
+	path = services/sphinx-arch-beta
+	url = https://github.com/eugeneai/sphinx-arch-beta.git
