@@ -1,4 +1,4 @@
--e git+git@github.com:eugeneai/rdflib-kyotocabinet.git#egg=rdflib-kyotocainet-0.1
+-e git+git@github.com:eugeneai/rdflib-kyotocabinet.git#egg=rdflib-kyotocainet
 -e git+git@github.com:CellulaProject/icc.cellula.git#egg=icc.cellula
 -e git+git@github.com:CellulaProject/icc.rdfservice.git#egg=icc.rdfservice
 -e git+git@github.com:CellulaProject/icc.restfuldocs.git#egg=icc.restfuldocs
