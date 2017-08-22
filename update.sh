@@ -8,10 +8,7 @@ do
     if [ -d .git ]; then
        echo "Updating $d"
        git pull $*
-<<<<<<< HEAD
-=======
        git submodule update
->>>>>>> 27ee61b509cef32486017f32c7f01f90fa708d70
     fi
     popd
 done
