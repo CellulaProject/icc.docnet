@@ -4,3 +4,4 @@
 -e git+git@github.com:isu-enterprise/icc.restfuldocs.git#egg=icc.restfuldocs
 -e git+git@github.com:isu-enterprise/icc.contentstorage.git#egg=icc.contentstorage
 -e git+git@github.com:eugeneai/pengines.git#egg=pengines
+-r elpy.txt
